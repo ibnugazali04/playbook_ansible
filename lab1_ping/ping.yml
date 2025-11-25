@@ -1,0 +1,6 @@
+- name: Lab 1 - Tes koneksi Ansible ke target
+  hosts: targets
+  gather_facts: no
+  tasks:
+    - name: Ping pakai Ansible
+      ansible.builtin.ping:
